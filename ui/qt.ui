@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>822</width>
-    <height>833</height>
+    <width>819</width>
+    <height>780</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,6 +18,18 @@
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>819</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>819</width>
+    <height>780</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Enigma</string>
@@ -203,6 +215,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>25</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -230,6 +245,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>7</number>
           </property>
          </widget>
         </item>
@@ -259,6 +277,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>17</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -286,6 +307,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-3</number>
           </property>
          </widget>
         </item>
@@ -315,6 +339,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>13</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -342,6 +369,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>19</number>
           </property>
          </widget>
         </item>
@@ -371,6 +401,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>12</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -398,6 +431,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>3</number>
           </property>
          </widget>
         </item>
@@ -427,6 +463,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -454,6 +493,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>11</number>
           </property>
          </widget>
         </item>
@@ -483,6 +525,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -510,6 +555,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-5</number>
           </property>
          </widget>
         </item>
@@ -539,6 +587,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -567,6 +618,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -594,6 +648,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-2</number>
           </property>
          </widget>
         </item>
@@ -626,6 +683,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>1</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -653,6 +713,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-2</number>
           </property>
          </widget>
         </item>
@@ -682,6 +745,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>4</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -709,6 +775,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-17</number>
           </property>
          </widget>
         </item>
@@ -738,6 +807,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-8</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -765,6 +837,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-16</number>
           </property>
          </widget>
         </item>
@@ -794,6 +869,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-18</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -821,6 +899,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-9</number>
           </property>
          </widget>
         </item>
@@ -850,6 +931,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -878,6 +962,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-22</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -905,6 +992,12 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-16</number>
+          </property>
+          <property name="displayIntegerBase">
+           <number>10</number>
           </property>
          </widget>
         </item>
@@ -944,6 +1037,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>3</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -971,6 +1067,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>17</number>
           </property>
          </widget>
         </item>
@@ -1000,6 +1099,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>22</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1027,6 +1129,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>18</number>
           </property>
          </widget>
         </item>
@@ -1056,6 +1161,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>16</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1083,6 +1191,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>7</number>
           </property>
          </widget>
         </item>
@@ -1112,6 +1223,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1139,6 +1253,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>1</number>
           </property>
          </widget>
         </item>
@@ -1168,6 +1285,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1195,6 +1315,12 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>16</number>
+          </property>
+          <property name="displayIntegerBase">
+           <number>10</number>
           </property>
          </widget>
         </item>
@@ -1224,6 +1350,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-3</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1251,6 +1380,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>8</number>
           </property>
          </widget>
         </item>
@@ -1280,6 +1412,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1308,6 +1443,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>9</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1335,6 +1473,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>2</number>
           </property>
          </widget>
         </item>
@@ -1367,6 +1508,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1394,6 +1538,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
           </property>
          </widget>
         </item>
@@ -1423,6 +1570,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-13</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1450,6 +1600,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-12</number>
           </property>
          </widget>
         </item>
@@ -1479,6 +1632,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-17</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1506,6 +1662,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-11</number>
           </property>
          </widget>
         </item>
@@ -1535,6 +1694,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-4</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1562,6 +1724,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>1</number>
           </property>
          </widget>
         </item>
@@ -1591,6 +1756,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1619,6 +1787,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-19</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1646,6 +1817,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-25</number>
           </property>
          </widget>
         </item>
@@ -1692,6 +1866,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>12</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1719,6 +1896,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
           </property>
          </widget>
         </item>
@@ -1748,6 +1928,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>23</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1775,6 +1958,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>10</number>
           </property>
          </widget>
         </item>
@@ -1804,6 +1990,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1831,6 +2020,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>14</number>
           </property>
          </widget>
         </item>
@@ -1860,6 +2052,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1887,6 +2082,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-5</number>
           </property>
          </widget>
         </item>
@@ -1916,6 +2114,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>9</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1943,6 +2144,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-2</number>
           </property>
          </widget>
         </item>
@@ -1972,6 +2176,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-13</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -1999,6 +2206,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>10</number>
           </property>
          </widget>
         </item>
@@ -2028,6 +2238,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2056,6 +2269,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-8</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2083,6 +2299,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>10</number>
           </property>
          </widget>
         </item>
@@ -2115,6 +2334,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-6</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2142,6 +2364,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>6</number>
           </property>
          </widget>
         </item>
@@ -2171,6 +2396,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>16</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2198,6 +2426,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>2</number>
           </property>
          </widget>
         </item>
@@ -2227,6 +2458,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2254,6 +2488,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-17</number>
           </property>
          </widget>
         </item>
@@ -2283,6 +2520,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2310,6 +2550,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-14</number>
           </property>
          </widget>
         </item>
@@ -2339,6 +2582,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-9</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2367,6 +2613,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-20</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2394,6 +2643,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-10</number>
           </property>
          </widget>
         </item>
@@ -2433,6 +2685,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>1</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2460,6 +2715,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>16</number>
           </property>
          </widget>
         </item>
@@ -2489,6 +2747,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2516,6 +2777,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>17</number>
           </property>
          </widget>
         </item>
@@ -2545,6 +2809,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>20</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2572,6 +2839,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>8</number>
           </property>
          </widget>
         </item>
@@ -2601,6 +2871,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2628,6 +2901,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>2</number>
           </property>
          </widget>
         </item>
@@ -2657,6 +2933,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>14</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2684,6 +2963,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>6</number>
           </property>
          </widget>
         </item>
@@ -2713,6 +2995,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2740,6 +3025,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-5</number>
           </property>
          </widget>
         </item>
@@ -2769,6 +3057,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-12</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2797,6 +3088,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2824,6 +3118,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>9</number>
           </property>
          </widget>
         </item>
@@ -2856,6 +3153,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2883,6 +3183,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>5</number>
           </property>
          </widget>
         </item>
@@ -2912,6 +3215,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-9</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2939,6 +3245,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>1</number>
           </property>
          </widget>
         </item>
@@ -2968,6 +3277,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-14</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -2995,6 +3307,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-2</number>
           </property>
          </widget>
         </item>
@@ -3024,6 +3339,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3051,6 +3369,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-6</number>
           </property>
          </widget>
         </item>
@@ -3080,6 +3401,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>13</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3108,6 +3432,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3135,6 +3462,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-23</number>
           </property>
          </widget>
         </item>
@@ -3181,6 +3511,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>17</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3208,6 +3541,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>4</number>
           </property>
          </widget>
         </item>
@@ -3237,6 +3573,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>19</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3264,6 +3603,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>21</number>
           </property>
          </widget>
         </item>
@@ -3293,6 +3635,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3320,6 +3665,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>11</number>
           </property>
          </widget>
         </item>
@@ -3349,6 +3697,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>3</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3376,6 +3727,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-5</number>
           </property>
          </widget>
         </item>
@@ -3405,6 +3759,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3432,6 +3789,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>9</number>
           </property>
          </widget>
         </item>
@@ -3461,6 +3821,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3488,6 +3851,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>9</number>
           </property>
          </widget>
         </item>
@@ -3517,6 +3883,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>17</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3545,6 +3914,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>6</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3572,6 +3944,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-6</number>
           </property>
          </widget>
         </item>
@@ -3604,6 +3979,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3631,6 +4009,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-4</number>
           </property>
          </widget>
         </item>
@@ -3660,6 +4041,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3687,6 +4071,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-12</number>
           </property>
          </widget>
         </item>
@@ -3716,6 +4103,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3743,6 +4133,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>3</number>
           </property>
          </widget>
         </item>
@@ -3772,6 +4165,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>4</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3799,6 +4195,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-21</number>
           </property>
          </widget>
         </item>
@@ -3828,6 +4227,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-16</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3856,6 +4258,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3883,6 +4288,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-21</number>
           </property>
          </widget>
         </item>
@@ -3922,6 +4330,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>10</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -3949,6 +4360,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>21</number>
           </property>
          </widget>
         </item>
@@ -3978,6 +4392,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>5</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4005,6 +4422,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-17</number>
           </property>
          </widget>
         </item>
@@ -4034,6 +4454,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>21</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4061,6 +4484,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-4</number>
           </property>
          </widget>
         </item>
@@ -4090,6 +4516,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>12</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4117,6 +4546,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>16</number>
           </property>
          </widget>
         </item>
@@ -4146,6 +4578,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>6</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4173,6 +4608,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-3</number>
           </property>
          </widget>
         </item>
@@ -4202,6 +4640,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4229,6 +4670,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-7</number>
           </property>
          </widget>
         </item>
@@ -4258,6 +4702,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>4</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4286,6 +4733,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>2</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4313,6 +4763,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>5</number>
           </property>
          </widget>
         </item>
@@ -4345,6 +4798,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-7</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4372,6 +4828,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-11</number>
           </property>
          </widget>
         </item>
@@ -4401,6 +4860,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-17</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4428,6 +4890,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-9</number>
           </property>
          </widget>
         </item>
@@ -4457,6 +4922,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-6</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4484,6 +4952,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-9</number>
           </property>
          </widget>
         </item>
@@ -4513,6 +4984,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-19</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4540,6 +5014,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>2</number>
           </property>
          </widget>
         </item>
@@ -4569,6 +5046,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-3</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4597,6 +5077,9 @@
           <property name="minimum">
            <number>-99</number>
           </property>
+          <property name="value">
+           <number>-21</number>
+          </property>
          </widget>
         </item>
         <item>
@@ -4624,6 +5107,9 @@
           </property>
           <property name="minimum">
            <number>-99</number>
+          </property>
+          <property name="value">
+           <number>-4</number>
           </property>
          </widget>
         </item>
@@ -4665,6 +5151,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>25</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -4692,6 +5181,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>23</number>
         </property>
        </widget>
       </item>
@@ -4721,6 +5213,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>21</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -4748,6 +5243,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>19</number>
         </property>
        </widget>
       </item>
@@ -4777,6 +5275,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>17</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -4804,6 +5305,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>15</number>
         </property>
        </widget>
       </item>
@@ -4833,6 +5337,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>13</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -4860,6 +5367,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>11</number>
         </property>
        </widget>
       </item>
@@ -4889,6 +5399,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>9</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -4916,6 +5429,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>7</number>
         </property>
        </widget>
       </item>
@@ -4945,6 +5461,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>5</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -4972,6 +5491,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>3</number>
         </property>
        </widget>
       </item>
@@ -5001,6 +5523,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>1</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5029,6 +5554,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-1</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5056,6 +5584,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>-3</number>
         </property>
        </widget>
       </item>
@@ -5088,6 +5619,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-5</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5115,6 +5649,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>-7</number>
         </property>
        </widget>
       </item>
@@ -5144,6 +5681,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-9</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5171,6 +5711,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>-11</number>
         </property>
        </widget>
       </item>
@@ -5200,6 +5743,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-13</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5227,6 +5773,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>-15</number>
         </property>
        </widget>
       </item>
@@ -5256,6 +5805,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-17</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5283,6 +5835,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>-19</number>
         </property>
        </widget>
       </item>
@@ -5312,6 +5867,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-21</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5340,6 +5898,9 @@
         <property name="minimum">
          <number>-99</number>
         </property>
+        <property name="value">
+         <number>-23</number>
+        </property>
        </widget>
       </item>
       <item>
@@ -5367,6 +5928,9 @@
         </property>
         <property name="minimum">
          <number>-99</number>
+        </property>
+        <property name="value">
+         <number>-25</number>
         </property>
        </widget>
       </item>
@@ -6346,29 +6910,343 @@
   <widget class="QWidget" name="horizontalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>420</y>
-     <width>551</width>
-     <height>41</height>
+     <x>40</x>
+     <y>400</y>
+     <width>681</width>
+     <height>111</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="zoneCle">
     <property name="spacing">
-     <number>22</number>
+     <number>6</number>
     </property>
     <item>
      <widget class="QLabel" name="cleLabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Clé</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="cleTextInput">
-      <property name="plainText">
-       <string>Zone pour saisir la clé sous forme de trois triplets. Exemple : (R3,G,+7)(R1,D,-6)(R2,D,+5)</string>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>3</number>
       </property>
-     </widget>
+      <item>
+       <widget class="QLabel" name="cleInfo">
+        <property name="text">
+         <string>Choisez la clé sous forme de trois triplets. Exemple : c1:(R3,G,+7) | c2:(R1,D,-6) | c3:(R2,D,+5)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="c1">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="c1_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>7</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>C1 :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c1_R">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>R1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c1_DG">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>D</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>G</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="c1_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>-99</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="c2">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="c2_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>7</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>C2 :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c2_R">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>R1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c2_DG">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>D</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>G</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="c2_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>-99</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="c3">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="c3_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>7</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>C3 :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c3_R">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>R1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c3_DG">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>D</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>G</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="c3_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>-99</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -6376,9 +7254,9 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>670</y>
+     <y>710</y>
      <width>671</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="html">
@@ -6386,16 +7264,16 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zone de textes pour taper le message a decrypter ou pour afficher le resultat d'encryption&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="encryptTextEdit">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>520</y>
+     <y>560</y>
      <width>671</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="autoFillBackground">
@@ -6406,14 +7284,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zone de textes pour taper le message a encrypter ou pour afficher le resultat de decryption&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>600</y>
+     <y>630</y>
      <width>691</width>
      <height>31</height>
     </rect>
@@ -6456,7 +7334,7 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>490</y>
+     <y>520</y>
      <width>751</width>
      <height>20</height>
     </rect>
@@ -6482,7 +7360,7 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>570</y>
+     <y>600</y>
      <width>751</width>
      <height>20</height>
     </rect>
@@ -6495,13 +7373,39 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>640</y>
+     <y>670</y>
      <width>751</width>
      <height>20</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="encLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>540</y>
+     <width>571</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zone de textes pour taper le message a encrypter ou pour afficher le resultat de decryption</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="decLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>690</y>
+     <width>461</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zone de textes pour taper le message a decrypter ou pour afficher le resultat d'encryption</string>
    </property>
   </widget>
  </widget>

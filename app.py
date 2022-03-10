@@ -9,6 +9,7 @@ class Window(QMainWindow, Ui_enigma_board):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+        # self.setWindowIcon(self, )
         # self.connectSignalsSlots()
 
 

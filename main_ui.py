@@ -16,6 +16,9 @@ class Ui_enigma_board(object):
         enigma_board.setObjectName("enigma_board")
         enigma_board.setEnabled(True)
         enigma_board.resize(794, 821)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui\\../../../../../enigma.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        enigma_board.setWindowIcon(icon)
         self.gridLayoutWidget = QtWidgets.QWidget(enigma_board)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 10, 757, 421))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
@@ -2855,7 +2858,7 @@ class Ui_enigma_board(object):
         self.reflecteur.addWidget(self.ref_box_26)
         self.grid.addLayout(self.reflecteur, 1, 0, 1, 1)
         self.horizontalLayoutWidget_2 = QtWidgets.QWidget(enigma_board)
-        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(100, 480, 551, 31))
+        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(100, 480, 551, 73))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
         self.zoneCle = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.zoneCle.setContentsMargins(0, 0, 0, 0)
@@ -2919,7 +2922,8 @@ class Ui_enigma_board(object):
 
     def retranslateUi(self, enigma_board):
         _translate = QtCore.QCoreApplication.translate
-        enigma_board.setWindowTitle(_translate("enigma_board", "Form"))
+        enigma_board.setWindowTitle(_translate("enigma_board", "Enigma"))
+        enigma_board.setAccessibleName(_translate("enigma_board", "Enigma"))
         self.rotor3Label.setText(_translate("enigma_board", "Rotor 3"))
         self.reflecteurLabel.setText(_translate("enigma_board", "Réflecteur"))
         self.rotor1Label.setText(_translate("enigma_board", "Rotor 1"))

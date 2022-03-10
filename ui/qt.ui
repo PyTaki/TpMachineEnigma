@@ -14,7 +14,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Enigma</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../enigma.ico</normaloff>../../../../../enigma.ico</iconset>
+  </property>
+  <property name="accessibleName">
+   <string>Enigma</string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
@@ -6297,7 +6304,7 @@
      <x>100</x>
      <y>480</y>
      <width>551</width>
-     <height>31</height>
+     <height>73</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="zoneCle">

@@ -5,12 +5,12 @@ from PyQt5.QtWidgets import (
 )
 from main_ui import Ui_enigma_board
 
+
 class Window(QMainWindow, Ui_enigma_board):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi(self)
-        # self.setWindowIcon(self, )
-        # self.connectSignalsSlots()
+        # self.setFixedSize(794, 821)
 
 
 if __name__ == "__main__":

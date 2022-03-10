@@ -36,7 +36,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>resources/enigma.ico</normaloff>resources/enigma.ico</iconset>
+    <normaloff>../../../../../../.designer/backup/resources/enigma.ico</normaloff>../../../../../../.designer/backup/resources/enigma.ico</iconset>
   </property>
   <property name="accessibleName">
    <string>Enigma</string>

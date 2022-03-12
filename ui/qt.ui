@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>819</width>
-    <height>780</height>
+    <width>1151</width>
+    <height>813</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,8 +27,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>819</width>
-    <height>780</height>
+    <width>1300</width>
+    <height>850</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../../../../.designer/backup/resources/enigma.ico</normaloff>../../../../../../.designer/backup/resources/enigma.ico</iconset>
+    <normaloff>resources/enigma.ico</normaloff>resources/enigma.ico</iconset>
   </property>
   <property name="accessibleName">
    <string>Enigma</string>
@@ -46,66 +46,44 @@
     <rect>
      <x>20</x>
      <y>30</y>
-     <width>780</width>
+     <width>1111</width>
      <height>341</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="grid">
     <property name="horizontalSpacing">
-     <number>10</number>
+     <number>0</number>
     </property>
     <property name="verticalSpacing">
-     <number>34</number>
+     <number>35</number>
     </property>
-    <item row="3" column="1">
-     <spacer name="spacer2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
     <item row="4" column="1">
-     <spacer name="spacer1">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+     <widget class="QLabel" name="rotor1Label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
+      <property name="text">
+       <string>Rotor 1</string>
       </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="rotor2Label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
-     </spacer>
+      <property name="text">
+       <string>Rotor 2</string>
+      </property>
+     </widget>
     </item>
     <item row="2" column="1">
-     <spacer name="spacer3">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="2" column="2">
      <widget class="QLabel" name="rotor3Label">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -118,7 +96,7 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="2">
+    <item row="1" column="1">
      <widget class="QLabel" name="reflecteurLabel">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -133,48 +111,6 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QLabel" name="rotor2Label">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>Rotor 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="2">
-     <widget class="QLabel" name="rotor1Label">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>Rotor 1</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <spacer name="spacer4">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
     </item>
     <item row="3" column="0">
      <layout class="QVBoxLayout" name="rotor2">
@@ -192,14 +128,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_1">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -223,14 +159,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_2">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -254,14 +190,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_3">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -285,14 +221,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_4">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -316,14 +252,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_5">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -347,14 +283,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_6">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -378,14 +314,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_7">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -409,14 +345,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_8">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -440,14 +376,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_9">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -471,14 +407,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_10">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -502,14 +438,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_11">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -533,14 +469,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_12">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -564,14 +500,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_13">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -595,14 +531,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_14">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -626,14 +562,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_15">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -660,14 +596,14 @@
            <bool>true</bool>
           </property>
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -691,14 +627,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_17">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -722,14 +658,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_18">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -753,14 +689,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_19">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -784,14 +720,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_20">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -815,14 +751,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_21">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -846,14 +782,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_22">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -877,14 +813,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_23">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -908,14 +844,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_24">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -939,14 +875,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_25">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -970,14 +906,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l1_box_26">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1014,14 +950,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_1">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1045,14 +981,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_2">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1076,14 +1012,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_3">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1107,14 +1043,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_4">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1138,14 +1074,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_5">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1169,14 +1105,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_6">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1200,14 +1136,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_7">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1231,14 +1167,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_8">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1262,14 +1198,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_9">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1293,14 +1229,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_10">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1327,14 +1263,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_11">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1358,14 +1294,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_12">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1389,14 +1325,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_13">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1420,14 +1356,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_14">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1451,14 +1387,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_15">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1485,14 +1421,14 @@
            <bool>true</bool>
           </property>
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1516,14 +1452,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_17">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1547,14 +1483,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_18">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1578,14 +1514,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_19">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1609,14 +1545,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_20">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1640,14 +1576,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_21">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1671,14 +1607,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_22">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1702,14 +1638,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_23">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1733,14 +1669,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_24">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1764,14 +1700,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_25">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1795,14 +1731,14 @@
         <item>
          <widget class="QSpinBox" name="r2_l2_box_26">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1850,7 +1786,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1881,7 +1817,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1912,7 +1848,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1943,7 +1879,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -1974,7 +1910,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2005,7 +1941,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2036,7 +1972,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2067,7 +2003,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2098,7 +2034,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2129,7 +2065,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2160,7 +2096,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2191,7 +2127,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2222,7 +2158,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2253,7 +2189,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2284,7 +2220,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2318,7 +2254,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2349,7 +2285,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2380,7 +2316,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2411,7 +2347,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2442,7 +2378,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2473,7 +2409,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2504,7 +2440,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2535,7 +2471,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2566,7 +2502,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2597,7 +2533,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2628,7 +2564,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2669,7 +2605,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2700,7 +2636,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2731,7 +2667,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2762,7 +2698,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2793,7 +2729,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2824,7 +2760,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2855,7 +2791,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2886,7 +2822,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2917,7 +2853,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2948,7 +2884,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -2979,7 +2915,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3010,7 +2946,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3041,7 +2977,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3072,7 +3008,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3103,7 +3039,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3137,7 +3073,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3168,7 +3104,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3199,7 +3135,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3230,7 +3166,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3261,7 +3197,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3292,7 +3228,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3323,7 +3259,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3354,7 +3290,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3385,7 +3321,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3416,7 +3352,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3447,7 +3383,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3495,7 +3431,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3526,7 +3462,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3557,7 +3493,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3588,7 +3524,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3619,7 +3555,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3650,7 +3586,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3681,7 +3617,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3712,7 +3648,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3743,7 +3679,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3774,7 +3710,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3805,7 +3741,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3836,7 +3772,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3867,7 +3803,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3898,7 +3834,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3929,7 +3865,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3963,7 +3899,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -3994,7 +3930,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4025,7 +3961,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4056,7 +3992,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4087,7 +4023,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4118,7 +4054,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4149,7 +4085,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4180,7 +4116,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4211,7 +4147,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4242,7 +4178,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4273,7 +4209,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4314,7 +4250,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4345,7 +4281,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4376,7 +4312,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4407,7 +4343,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4438,7 +4374,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4469,7 +4405,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4500,7 +4436,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4531,7 +4467,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4562,7 +4498,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4593,7 +4529,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4624,7 +4560,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4655,7 +4591,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4686,7 +4622,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4717,7 +4653,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4748,7 +4684,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4782,7 +4718,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4813,7 +4749,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4844,7 +4780,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4875,7 +4811,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4906,7 +4842,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4937,7 +4873,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4968,7 +4904,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -4999,7 +4935,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -5030,7 +4966,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -5061,7 +4997,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -5092,7 +5028,7 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>25</width>
+            <width>40</width>
             <height>30</height>
            </size>
           </property>
@@ -5135,7 +5071,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5166,7 +5102,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5197,7 +5133,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5228,7 +5164,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5259,7 +5195,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5290,7 +5226,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5321,7 +5257,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5352,7 +5288,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5383,7 +5319,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5414,7 +5350,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5445,7 +5381,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5476,7 +5412,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5507,7 +5443,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5538,7 +5474,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5569,7 +5505,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5603,7 +5539,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5634,7 +5570,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5665,7 +5601,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5696,7 +5632,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5727,7 +5663,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5758,7 +5694,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5789,7 +5725,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5820,7 +5756,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5851,7 +5787,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5882,7 +5818,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5913,7 +5849,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5951,7 +5887,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -5988,7 +5924,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6025,7 +5961,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6062,7 +5998,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6099,7 +6035,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6136,7 +6072,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6173,7 +6109,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6210,7 +6146,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6247,7 +6183,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6284,7 +6220,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6321,7 +6257,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6358,7 +6294,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6395,7 +6331,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6432,7 +6368,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6469,7 +6405,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6506,7 +6442,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6543,7 +6479,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6580,7 +6516,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6617,7 +6553,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6654,7 +6590,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6691,7 +6627,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6728,7 +6664,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6765,7 +6701,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6802,7 +6738,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6839,7 +6775,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6876,7 +6812,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>25</width>
+          <width>40</width>
           <height>30</height>
          </size>
         </property>
@@ -6910,10 +6846,10 @@
   <widget class="QWidget" name="horizontalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>190</x>
      <y>400</y>
-     <width>681</width>
-     <height>111</height>
+     <width>721</width>
+     <height>121</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="zoneCle">
@@ -6950,6 +6886,11 @@
       </property>
       <item>
        <widget class="QLabel" name="cleInfo">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Choisez la clé sous forme de trois triplets. Exemple : c1:(R3,G,+7) | c2:(R1,D,-6) | c3:(R2,D,+5)</string>
         </property>
@@ -7253,10 +7194,10 @@
   <widget class="QTextEdit" name="decryptTextEdit">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>710</y>
-     <width>671</width>
-     <height>41</height>
+     <x>160</x>
+     <y>750</y>
+     <width>831</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="html">
@@ -7270,10 +7211,10 @@ p, li { white-space: pre-wrap; }
   <widget class="QTextEdit" name="encryptTextEdit">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>560</y>
-     <width>671</width>
-     <height>41</height>
+     <x>160</x>
+     <y>580</y>
+     <width>831</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="autoFillBackground">
@@ -7290,10 +7231,10 @@ p, li { white-space: pre-wrap; }
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>630</y>
-     <width>691</width>
-     <height>31</height>
+     <x>170</x>
+     <y>660</y>
+     <width>751</width>
+     <height>41</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="zoneButtons">
@@ -7302,6 +7243,15 @@ p, li { white-space: pre-wrap; }
     </property>
     <item>
      <widget class="QPushButton" name="configurerButton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <italic>true</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
       <property name="text">
        <string>Configurer Rotors</string>
       </property>
@@ -7309,6 +7259,12 @@ p, li { white-space: pre-wrap; }
     </item>
     <item>
      <widget class="QPushButton" name="encrypterButton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
       <property name="text">
        <string>Encrypter ↓</string>
       </property>
@@ -7316,6 +7272,12 @@ p, li { white-space: pre-wrap; }
     </item>
     <item>
      <widget class="QPushButton" name="suivantButton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
       <property name="text">
        <string>Etape suivante</string>
       </property>
@@ -7323,6 +7285,12 @@ p, li { white-space: pre-wrap; }
     </item>
     <item>
      <widget class="QPushButton" name="decrypterButton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
       <property name="text">
        <string>Décrypter ↑</string>
       </property>
@@ -7333,9 +7301,9 @@ p, li { white-space: pre-wrap; }
   <widget class="Line" name="line2">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>520</y>
-     <width>751</width>
+     <x>20</x>
+     <y>530</y>
+     <width>1111</width>
      <height>20</height>
     </rect>
    </property>
@@ -7346,9 +7314,9 @@ p, li { white-space: pre-wrap; }
   <widget class="Line" name="line1">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>380</y>
-     <width>751</width>
+     <width>1111</width>
      <height>20</height>
     </rect>
    </property>
@@ -7359,9 +7327,9 @@ p, li { white-space: pre-wrap; }
   <widget class="Line" name="line3">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>600</y>
-     <width>751</width>
+     <x>20</x>
+     <y>640</y>
+     <width>1111</width>
      <height>20</height>
     </rect>
    </property>
@@ -7372,9 +7340,9 @@ p, li { white-space: pre-wrap; }
   <widget class="Line" name="line4">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>670</y>
-     <width>751</width>
+     <x>20</x>
+     <y>700</y>
+     <width>1111</width>
      <height>20</height>
     </rect>
    </property>
@@ -7385,11 +7353,16 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="encLabel">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>540</y>
+     <x>160</x>
+     <y>550</y>
      <width>571</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Zone de textes pour taper le message a encrypter ou pour afficher le resultat de decryption</string>
@@ -7398,11 +7371,16 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="decLabel">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>690</y>
+     <x>160</x>
+     <y>720</y>
      <width>461</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Zone de textes pour taper le message a decrypter ou pour afficher le resultat d'encryption</string>

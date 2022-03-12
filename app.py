@@ -1,8 +1,9 @@
 import sys
 import time
 from PyQt5 import QtGui
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow
+    QApplication, QMainWindow, QAbstractSpinBox
 )
 
 from main_ui import Ui_enigma_board
@@ -23,33 +24,35 @@ class Window(QMainWindow, Ui_enigma_board):
         #--------------------
 
     def disableConfigs(self):
-        self.c1_R.setEnabled(False)
-        self.c1_DG.setEnabled(False)
-        self.c1_box.setEnabled(False)
-        self.c2_R.setEnabled(False)
-        self.c2_DG.setEnabled(False)
-        self.c2_box.setEnabled(False)
-        self.c3_R.setEnabled(False)
-        self.c3_DG.setEnabled(False)
-        self.c3_box.setEnabled(False)
+        for i in range(1, 27, 1):
+            getattr(self, "ref_box_"+str(i)).setReadOnly(True)
+            getattr(self, "ref_box_" + str(i)).setButtonSymbols(QAbstractSpinBox.NoButtons)
+            for j in range(1, 4, 1):
+                for k in range(1, 3, 1):
+                    getattr(self, "r" + str(j) + "_l" + str(k) + "_box_" + str(i)).setReadOnly(True)
+                    getattr(self, "r" + str(j) + "_l" + str(k) + "_box_" + str(i)).setButtonSymbols(QAbstractSpinBox.NoButtons)
 
     def enableConfigs(self):
-        self.c1_R.setEnabled(True)
-        self.c1_DG.setEnabled(True)
-        self.c1_box.setEnabled(True)
-        self.c2_R.setEnabled(True)
-        self.c2_DG.setEnabled(True)
-        self.c2_box.setEnabled(True)
-        self.c3_R.setEnabled(True)
-        self.c3_DG.setEnabled(True)
-        self.c3_box.setEnabled(True)
+        for i in range(1, 27, 1):
+            getattr(self, "ref_box_" + str(i)).setReadOnly(False)
+            getattr(self, "ref_box_" + str(i)).setButtonSymbols(QAbstractSpinBox.UpDownArrows)
+            for j in range(1,4, 1):
+                for k in range(1, 3, 1):
+                    getattr(self, "r"+str(j)+"_l"+str(k)+"_box_"+str(i)).setReadOnly(False)
+                    getattr(self, "r"+str(j)+"_l"+str(k)+"_box_"+str(i)).setButtonSymbols(QAbstractSpinBox.UpDownArrows)
 
     def configurer_button_clicked(self):
-        self.enableConfigs()
+        if(self.configurerButton.text() == "Configurer Rotors"):
+            self.enableConfigs()
+            self.configurerButton.setText("Confirmer")
+        elif(self.configurerButton.text() == "Confirmer"):
+            self.disableConfigs()
+            self.configurerButton.setText("Configurer Rotors")
 
     def encypter_button_clicked(self):
         msg = self.encryptTextEdit.toPlainText()
         self.decryptTextEdit.setText(msg)
+        self.decryptTextEdit.setAlignment(Qt.AlignCenter)
 
     def suivant_button_clicked(self):
         msg = self.encryptTextEdit.toPlainText()

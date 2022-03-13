@@ -1,7 +1,8 @@
 import sys
 import time
 from PyQt5 import QtGui
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QPropertyAnimation, QEasingCurve, QPoint, QRect
+from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QAbstractSpinBox
 )
@@ -12,8 +13,13 @@ from main_ui import Ui_enigma_board
 class Window(QMainWindow, Ui_enigma_board):
     def __init__(self, parent=None):
         super().__init__(parent)
+
+        #props
+        self.currentLetter = ""
+        self.currentIndex = 0
         self.setupUi(self)
         self.disableConfigs()
+        self.changeBoxBackgroundColor("r1_l1_box_1", "red")
         # self.changeLetterBackgroundColor("a","red")
         #--------------------
         self.configurerButton.clicked.connect(self.configurer_button_clicked)
@@ -52,7 +58,19 @@ class Window(QMainWindow, Ui_enigma_board):
     ''' changes the background color of the letter in the alphabets row by passing the letter and the color'''
     def changeLetterBackgroundColor(self, letter, color):
         getattr(self, letter).setAutoFillBackground(True)  # This is important!!
-        getattr(self,letter).setStyleSheet("QLabel { background-color: "+color+" }")
+        getattr(self, letter).setStyleSheet("QLabel { background-color: "+color+" }")
+
+    def changeBoxBackgroundColor(self, box, color):
+        getattr(self, box).setAutoFillBackground(True)  # This is important!!
+        getattr(self,box).setStyleSheet("QSpinBox { background-color: "+color+" }")
+
+    def animate(self, objectName):
+        self.anim = QPropertyAnimation(getattr(self, objectName), b"geometry")
+        self.anim.setEasingCurve(QEasingCurve.InOutCubic)
+        self.anim.setStartValue(QRect(getattr(self, objectName).geometry()))
+        self.anim.setEndValue(QRect(getattr(self, objectName).geometry().adjusted(0,0,-10,40)))
+        self.anim.setDuration(1500)
+        self.anim.start(QPropertyAnimation.DeleteWhenStopped)
 
     #--------------Actions when buttons are clicked-----------
 
@@ -71,8 +89,17 @@ class Window(QMainWindow, Ui_enigma_board):
 
     def suivant_button_clicked(self):
         msg = self.encryptTextEdit.toPlainText()
-        for c in msg:
-            self.changeLetterColor(c, "red")
+        if(self.currentIndex < len(msg)):
+            if(self.currentIndex > 0):
+                self.changeLetterBackgroundColor(self.currentLetter, "transparent")
+            self.currentLetter = msg[self.currentIndex]
+            self.currentIndex += 1
+            self.changeLetterBackgroundColor(self.currentLetter, "red")
+            # self.animate("r1_l1_box_1")
+        else :
+            self.changeLetterBackgroundColor(self.currentLetter, "transparent")
+            self.decryptTextEdit.setText("Fin D'encryption")
+            self.decryptTextEdit.setAlignment(Qt.AlignCenter)
 
     def decrypter_button_clicked(self):
         pass

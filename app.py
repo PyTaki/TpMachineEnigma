@@ -14,14 +14,14 @@ class Window(QMainWindow, Ui_enigma_board):
         super().__init__(parent)
         self.setupUi(self)
         self.disableConfigs()
-        self.changeLetterColor("a","red")
-        # self.a.setStyleSheet("color: blue ")
+        # self.changeLetterBackgroundColor("a","red")
         #--------------------
         self.configurerButton.clicked.connect(self.configurer_button_clicked)
         self.encrypterButton.clicked.connect(self.encypter_button_clicked)
         self.decrypterButton.clicked.connect(self.decrypter_button_clicked)
         self.suivantButton.clicked.connect(self.suivant_button_clicked)
-        #--------------------
+
+    #----- Utils -----
 
     '''it sets the rotors and the reflecteur on readOnly mode'''
     def disableConfigs(self):
@@ -54,7 +54,8 @@ class Window(QMainWindow, Ui_enigma_board):
         getattr(self, letter).setAutoFillBackground(True)  # This is important!!
         getattr(self,letter).setStyleSheet("QLabel { background-color: "+color+" }")
 
-#----------------------------------------Button---------------------------------------------
+    #--------------Actions when buttons are clicked-----------
+
     def configurer_button_clicked(self):
         if(self.configurerButton.text() == "Configurer Rotors"):
             self.enableConfigs()

@@ -1,2 +1,2 @@
-x= divmod(10-3, 26)
+x= divmod(-9, 26)
 print(x[1])

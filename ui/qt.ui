@@ -7438,7 +7438,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Choisez la clé sous forme de trois triplets. Exemple : (R3,G,+7)  |  (R1,D,-6)  |  (R2,D,+5)</string>
+         <string>Choisez la clé sous forme de trois triplets. Exemple : C1: (R3,G,+7)  |  C2: (R1,D,-6)  |  C3: (R2,D,+5)</string>
         </property>
        </widget>
       </item>
@@ -7460,7 +7460,7 @@
          <number>0</number>
         </property>
         <item>
-         <widget class="QLabel" name="r1_label">
+         <widget class="QLabel" name="c1_label">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
             <horstretch>0</horstretch>
@@ -7475,8 +7475,33 @@
            </font>
           </property>
           <property name="text">
-           <string>R1 :</string>
+           <string>C1 :</string>
           </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c1_R">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>R1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
          </widget>
         </item>
         <item>
@@ -7532,7 +7557,7 @@
          <number>0</number>
         </property>
         <item>
-         <widget class="QLabel" name="r2_label">
+         <widget class="QLabel" name="c2_label">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
             <horstretch>0</horstretch>
@@ -7547,8 +7572,33 @@
            </font>
           </property>
           <property name="text">
-           <string>R2 :</string>
+           <string>C2 :</string>
           </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c2_R">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>R1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
          </widget>
         </item>
         <item>
@@ -7604,7 +7654,7 @@
          <number>0</number>
         </property>
         <item>
-         <widget class="QLabel" name="r3_label">
+         <widget class="QLabel" name="c3_label">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
             <horstretch>0</horstretch>
@@ -7619,8 +7669,33 @@
            </font>
           </property>
           <property name="text">
-           <string>R3 :</string>
+           <string>C3 :</string>
           </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="c3_R">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>R1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
          </widget>
         </item>
         <item>

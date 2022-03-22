@@ -71,6 +71,7 @@ class Window(QMainWindow, Ui_enigma_board):
     def disableConfigs(self):
         for i in range(1, 4, 1):
             getattr(self, "c" + str(i) + "_DG").setEnabled(False)
+            getattr(self, "c" + str(i) + "_R").setEnabled(False)
             getattr(self, "c" + str(i) + "_box").setEnabled(False)
 
         # for i in range(1, 27, 1):
@@ -84,6 +85,7 @@ class Window(QMainWindow, Ui_enigma_board):
     def enableConfigs(self):
         for i in range(1, 4, 1):
             getattr(self, "c" + str(i) + "_DG").setEnabled(True)
+            getattr(self, "c" + str(i) + "_R").setEnabled(True)
             getattr(self, "c" + str(i) + "_box").setEnabled(True)
 
     ''' changes the color of the letter in the alphabets row by passing the letter and the color'''
@@ -154,11 +156,50 @@ class Window(QMainWindow, Ui_enigma_board):
             self.encrypterToggled = True
             self.decrypterToggled = False
             self.decryptTextEdit.clear()
-        # the code for the encryption here
+        #--------------------------
+        txt = ""
+        i=0
+        while(i < len(msg)):
+            self.currentState["letter"] = msg[i]
+            if self.currentState["letter"] != " ":
+                self.currentState["b1"] = ord(self.currentState["letter"]) - 96
+                box1 = getattr(self, "r1_l2_box_" + str(self.currentState["b1"]))
+
+                self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1] if divmod((self.currentState["b1"] + box1.value()), 26)[1] != 0 else 26
+
+                box2 = getattr(self, "r2_l2_box_" + str(self.currentState["b2"]))
+
+                self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1] if divmod((self.currentState["b2"] + box2.value()), 26)[1] != 0 else 26
+                box3 = getattr(self, "r3_l2_box_" + str(self.currentState["b3"]))
+
+                self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1] if divmod((self.currentState["b3"] + box3.value()), 26)[1] != 0 else 26
+                box_curr_ref = getattr(self, "ref_box_" + str(self.currentState["ref"]))
+
+                # ------------------------------------
+                self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] if divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] != 0 else 26
+                # box_ret_ref = getattr(self, "ref_box_" + str(self.currentState["ret_ref"]))
+
+                self.currentState["ret_b3"] = self.currentState["ret_ref"]
+                box3_ret = getattr(self, "r3_l1_box_" + str(self.currentState["ret_b3"]))
+
+                self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] if divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] != 0 else 26
+                box2_ret = getattr(self, "r2_l1_box_" + str(self.currentState["ret_b2"]))
+
+                self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] if divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] != 0 else 26
+                box1_ret = getattr(self, "r1_l1_box_" + str(self.currentState["ret_b1"]))
+
+                tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1] if divmod((self.currentState["ret_b1"] + box1_ret.value()), 26)[1] != 0 else 26
+                self.currentState["ret_letter"] = chr(tmp + 96)
+            else:
+                self.currentState["ret_letter"] = " "
+            i += 1
+            txt += self.currentState["ret_letter"]
+
+        self.decryptTextEdit.setText(txt)
+        self.decryptTextEdit.setAlignment(Qt.AlignCenter)
 
     def suivant_button_clicked(self):
         # switch: encrypter ou decrypter
-
         if self.encrypterToggled:
             msg = self.encryptTextEdit.toPlainText().lower()
             if self.currentState["index"] < len(msg):
@@ -168,7 +209,18 @@ class Window(QMainWindow, Ui_enigma_board):
                 #colorate the current chemain
                 self.currentState["letter"] = msg[self.currentState["index"]]
                 self.colorerChemain()
-
+                #----------------------------------
+                # if self.currentState["letter"] != " ":
+                #     txt = self.decryptTextEdit.toPlainText()
+                #     txt += self.currentState["letter"]
+                #     self.decryptTextEdit.setText(txt)
+                #     self.decryptTextEdit.setAlignment(Qt.AlignCenter)
+                # else:
+                #     txt = self.decryptTextEdit.toPlainText()
+                #     txt += " "
+                #     self.decryptTextEdit.setText(txt)
+                #     self.decryptTextEdit.setAlignment(Qt.AlignCenter)
+                #----------------------------------
                 self.currentState["index"] += 1
 
             else:
@@ -177,7 +229,7 @@ class Window(QMainWindow, Ui_enigma_board):
                 self.decrypterButton.setEnabled(True)
                 self.decrypterToggled = False
                 self.encrypterToggled = False
-                self.decryptTextEdit.setText("Fin D'encryption")
+                # self.decryptTextEdit.setText("Fin D'encryption")
                 self.unColorChemain()
                 self.decryptTextEdit.setAlignment(Qt.AlignCenter)
         #
@@ -190,7 +242,18 @@ class Window(QMainWindow, Ui_enigma_board):
                 # colorate the current chemain
                 self.currentState["letter"] = msg[self.currentState["index"]]
                 self.colorerChemain()
-
+                #-----------------------------------
+                # if self.currentState["letter"] != " ":
+                #     txt = self.encryptTextEdit.toPlainText()
+                #     txt += self.currentState["letter"]
+                #     self.encryptTextEdit.setText(txt)
+                #     self.encryptTextEdit.setAlignment(Qt.AlignCenter)
+                # else:
+                #     txt = self.encryptTextEdit.toPlainText()
+                #     txt += " "
+                #     self.encryptTextEdit.setText(txt)
+                #     self.encryptTextEdit.setAlignment(Qt.AlignCenter)
+                #----------------------------------
                 self.currentState["index"] += 1
 
             else:
@@ -199,7 +262,7 @@ class Window(QMainWindow, Ui_enigma_board):
                 self.decrypterButton.setEnabled(True)
                 self.decrypterToggled = False
                 self.encrypterToggled = False
-                self.encryptTextEdit.setText("Fin de decryption")
+                # self.encryptTextEdit.setText("Fin de decryption")
                 self.unColorChemain()
                 self.encryptTextEdit.setAlignment(Qt.AlignCenter)
 
@@ -214,6 +277,7 @@ class Window(QMainWindow, Ui_enigma_board):
             self.decryptTextEdit.clear()
         # the code for the decryption here
 
+    # ---------------------------------
     def configRotors(self):
         ic1 = self.c1_box.value()
         ic2 = self.c2_box.value()
@@ -235,59 +299,58 @@ class Window(QMainWindow, Ui_enigma_board):
             self.decalage("r3", "D", ic3)
 
     def colorerChemain(self):
+        if self.currentState["letter"] != " ":
+            self.changeLetterBackgroundColor(self.currentState["letter"], "red")
+            self.currentState["b1"] = ord(self.currentState["letter"]) - 96
+            self.changeBoxBackgroundColor("r1_l2_box_" + str(self.currentState["b1"]), "red")
+            box1 = getattr(self, "r1_l2_box_" + str(self.currentState["b1"]))
+            self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1] if  divmod((self.currentState["b1"] + box1.value()), 26)[1] != 0 else 26
 
-        self.changeLetterBackgroundColor(self.currentState["letter"], "red")
-        self.currentState["b1"] = ord(self.currentState["letter"]) - 96
-        self.changeBoxBackgroundColor("r1_l2_box_" + str(self.currentState["b1"]), "red")
-        box1 = getattr(self, "r1_l2_box_" + str(self.currentState["b1"]))
+            self.changeBoxBackgroundColor("r2_l2_box_" + str(self.currentState["b2"]), "red")
+            box2 = getattr(self, "r2_l2_box_" + str(self.currentState["b2"]))
 
+            self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1] if  divmod((self.currentState["b2"] + box2.value()), 26)[1] != 0 else 26
+            self.changeBoxBackgroundColor("r3_l2_box_" + str(self.currentState["b3"]), "red")
+            box3 = getattr(self, "r3_l2_box_" + str(self.currentState["b3"]))
 
-        self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1] if  divmod((self.currentState["b1"] + box1.value()), 26)[1] != 0 else 26
+            self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1] if  divmod((self.currentState["b3"] + box3.value()), 26)[1] != 0 else 26
+            self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ref"]), "red")
+            box_curr_ref = getattr(self, "ref_box_" + str(self.currentState["ref"]))
+            # ------------------------------------
+            self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] if  divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] != 0 else 26
+            self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ret_ref"]), "blue")
+            # box_ret_ref = getattr(self, "ref_box_" + str(self.currentState["ret_ref"]))
 
-        self.changeBoxBackgroundColor("r2_l2_box_" + str(self.currentState["b2"]), "red")
-        box2 = getattr(self, "r2_l2_box_" + str(self.currentState["b2"]))
+            self.currentState["ret_b3"] = self.currentState["ret_ref"]
+            self.changeBoxBackgroundColor("r3_l1_box_" + str(self.currentState["ret_b3"]), "blue")
+            box3_ret = getattr(self, "r3_l1_box_" + str(self.currentState["ret_b3"]))
 
-        self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1] if  divmod((self.currentState["b2"] + box2.value()), 26)[1] != 0 else 26
-        self.changeBoxBackgroundColor("r3_l2_box_" + str(self.currentState["b3"]), "red")
-        box3 = getattr(self, "r3_l2_box_" + str(self.currentState["b3"]))
+            self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] if  divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] != 0 else 26
+            self.changeBoxBackgroundColor("r2_l1_box_" + str(self.currentState["ret_b2"]), "blue")
+            box2_ret = getattr(self, "r2_l1_box_" + str(self.currentState["ret_b2"]))
 
-        self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1] if  divmod((self.currentState["b3"] + box3.value()), 26)[1] != 0 else 26
-        self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ref"]), "red")
-        box_curr_ref = getattr(self, "ref_box_" + str(self.currentState["ref"]))
-        # ------------------------------------
-        self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] if  divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] != 0 else 26
-        self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ret_ref"]), "blue")
-        # box_ret_ref = getattr(self, "ref_box_" + str(self.currentState["ret_ref"]))
+            self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] if divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] != 0 else 26
+            self.changeBoxBackgroundColor("r1_l1_box_" + str(self.currentState["ret_b1"]), "blue")
+            box1_ret = getattr(self, "r1_l1_box_" + str(self.currentState["ret_b1"]))
 
-        self.currentState["ret_b3"] = self.currentState["ret_ref"]
-        self.changeBoxBackgroundColor("r3_l1_box_" + str(self.currentState["ret_b3"]), "blue")
-        box3_ret = getattr(self, "r3_l1_box_" + str(self.currentState["ret_b3"]))
-
-        self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] if  divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] != 0 else 26
-        self.changeBoxBackgroundColor("r2_l1_box_" + str(self.currentState["ret_b2"]), "blue")
-        box2_ret = getattr(self, "r2_l1_box_" + str(self.currentState["ret_b2"]))
-
-        self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] if  divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] != 0 else 26
-        self.changeBoxBackgroundColor("r1_l1_box_" + str(self.currentState["ret_b1"]), "blue")
-        box1_ret = getattr(self, "r1_l1_box_" + str(self.currentState["ret_b1"]))
-
-        tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1] if divmod((self.currentState["ret_b1"] + box1_ret.value()), 26)[1] != 0 else 26
-        self.currentState["ret_letter"] = chr( tmp + 96)
-        self.changeLetterBackgroundColor(self.currentState["ret_letter"], "blue")
+            tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1] if divmod((self.currentState["ret_b1"] + box1_ret.value()), 26)[1] != 0 else 26
+            self.currentState["ret_letter"] = chr( tmp + 96)
+            self.changeLetterBackgroundColor(self.currentState["ret_letter"], "blue")
 
     def unColorChemain(self):
         # aller
-        self.changeLetterBackgroundColor(self.currentState["letter"], "transparent")
-        self.changeBoxBackgroundColor("r1_l2_box_" + str(self.currentState["b1"]), "transparent")
-        self.changeBoxBackgroundColor("r2_l2_box_" + str(self.currentState["b2"]), "transparent")
-        self.changeBoxBackgroundColor("r3_l2_box_" + str(self.currentState["b3"]), "transparent")
-        self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ref"]), "transparent")
-        # retour
-        self.changeBoxBackgroundColor("r1_l1_box_" + str(self.currentState["ret_b1"]), "transparent")
-        self.changeBoxBackgroundColor("r2_l1_box_" + str(self.currentState["ret_b2"]), "transparent")
-        self.changeBoxBackgroundColor("r3_l1_box_" + str(self.currentState["ret_b3"]), "transparent")
-        self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ret_ref"]), "transparent")
-        self.changeLetterBackgroundColor(self.currentState["ret_letter"], "transparent")
+        if self.currentState["letter"] != " ":
+            self.changeLetterBackgroundColor(self.currentState["letter"], "transparent")
+            self.changeBoxBackgroundColor("r1_l2_box_" + str(self.currentState["b1"]), "transparent")
+            self.changeBoxBackgroundColor("r2_l2_box_" + str(self.currentState["b2"]), "transparent")
+            self.changeBoxBackgroundColor("r3_l2_box_" + str(self.currentState["b3"]), "transparent")
+            self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ref"]), "transparent")
+            # retour
+            self.changeBoxBackgroundColor("r1_l1_box_" + str(self.currentState["ret_b1"]), "transparent")
+            self.changeBoxBackgroundColor("r2_l1_box_" + str(self.currentState["ret_b2"]), "transparent")
+            self.changeBoxBackgroundColor("r3_l1_box_" + str(self.currentState["ret_b3"]), "transparent")
+            self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ret_ref"]), "transparent")
+            self.changeLetterBackgroundColor(self.currentState["ret_letter"], "transparent")
 
 
 # running the app
@@ -300,8 +363,3 @@ sys.exit(app.exec())
 #                $  pyuic5 -o main_ui.py ui/qt.ui
 # when we finish the app, we can convert it to executable file using this commands:
 #                $  pyinstaller --onefile --windowed -i".\ui\resources\enigma.ico" ".\app.py"
-
-#Questions:
-# est ce que l'ordre de decalage des rotors est par default: R1,R2,R3 ou bien on le specifie ?
-#le (en/de)cryptage de la totalite du texte ou bient juste lettre par lettre ?
-#etape suivante :  tout le chemain du lettre                   |     juste un sous-etape de l'encryption d'une lettre ?

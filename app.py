@@ -25,22 +25,11 @@ class Window(QMainWindow, Ui_enigma_board):
                              "ret_ref": 0,
                              "ret_letter": ""}
 
-        # self.previousState = {"letter": "",
-        #                      "index": 0,
-        #                      "b1": 0,
-        #                      "b2": 0,
-        #                      "ref": 0,
-        #                      "b3": 0,
-        #                      "ret_b1": 0,
-        #                      "ret_b2": 0,
-        #                      "ret_b3": 0,
-        #                      "ret_ref": 0,
-        #                      "previous_ret_letter": ""}
-
-
         self.initialState = {}
         self.encrypterToggled = False
         self.decrypterToggled = False
+
+        self.rotorAdecaler = None
 
         self.setupUi(self)
         self.InitialRotorState()
@@ -149,7 +138,7 @@ class Window(QMainWindow, Ui_enigma_board):
 
     def encypter_button_clicked(self):
         # this code is just for settling up the button
-        msg = self.encryptTextEdit.toPlainText()
+        msg = self.encryptTextEdit.toPlainText().lower()
         if len(msg) > 0:
             self.encrypterButton.setEnabled(False)
             self.decrypterButton.setEnabled(False)
@@ -157,46 +146,46 @@ class Window(QMainWindow, Ui_enigma_board):
             self.decrypterToggled = False
             self.decryptTextEdit.clear()
         #--------------------------
-        txt = ""
-        i=0
-        while(i < len(msg)):
-            self.currentState["letter"] = msg[i]
-            if self.currentState["letter"] != " ":
-                self.currentState["b1"] = ord(self.currentState["letter"]) - 96
-                box1 = getattr(self, "r1_l2_box_" + str(self.currentState["b1"]))
-
-                self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1] if divmod((self.currentState["b1"] + box1.value()), 26)[1] != 0 else 26
-
-                box2 = getattr(self, "r2_l2_box_" + str(self.currentState["b2"]))
-
-                self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1] if divmod((self.currentState["b2"] + box2.value()), 26)[1] != 0 else 26
-                box3 = getattr(self, "r3_l2_box_" + str(self.currentState["b3"]))
-
-                self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1] if divmod((self.currentState["b3"] + box3.value()), 26)[1] != 0 else 26
-                box_curr_ref = getattr(self, "ref_box_" + str(self.currentState["ref"]))
-
-                # ------------------------------------
-                self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] if divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] != 0 else 26
-                # box_ret_ref = getattr(self, "ref_box_" + str(self.currentState["ret_ref"]))
-
-                self.currentState["ret_b3"] = self.currentState["ret_ref"]
-                box3_ret = getattr(self, "r3_l1_box_" + str(self.currentState["ret_b3"]))
-
-                self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] if divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] != 0 else 26
-                box2_ret = getattr(self, "r2_l1_box_" + str(self.currentState["ret_b2"]))
-
-                self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] if divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] != 0 else 26
-                box1_ret = getattr(self, "r1_l1_box_" + str(self.currentState["ret_b1"]))
-
-                tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1] if divmod((self.currentState["ret_b1"] + box1_ret.value()), 26)[1] != 0 else 26
-                self.currentState["ret_letter"] = chr(tmp + 96)
-            else:
-                self.currentState["ret_letter"] = " "
-            i += 1
-            txt += self.currentState["ret_letter"]
-
-        self.decryptTextEdit.setText(txt)
-        self.decryptTextEdit.setAlignment(Qt.AlignCenter)
+        # txt = ""
+        # i=0
+        # while(i < len(msg)):
+        #     self.currentState["letter"] = msg[i]
+        #     if self.currentState["letter"] != " ":
+        #         self.currentState["b1"] = ord(self.currentState["letter"]) - 96
+        #         box1 = getattr(self, "r1_l2_box_" + str(self.currentState["b1"]))
+        #
+        #         self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1] if divmod((self.currentState["b1"] + box1.value()), 26)[1] != 0 else 26
+        #
+        #         box2 = getattr(self, "r2_l2_box_" + str(self.currentState["b2"]))
+        #
+        #         self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1] if divmod((self.currentState["b2"] + box2.value()), 26)[1] != 0 else 26
+        #         box3 = getattr(self, "r3_l2_box_" + str(self.currentState["b3"]))
+        #
+        #         self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1] if divmod((self.currentState["b3"] + box3.value()), 26)[1] != 0 else 26
+        #         box_curr_ref = getattr(self, "ref_box_" + str(self.currentState["ref"]))
+        #
+        #         # ------------------------------------
+        #         self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] if divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] != 0 else 26
+        #         # box_ret_ref = getattr(self, "ref_box_" + str(self.currentState["ret_ref"]))
+        #
+        #         self.currentState["ret_b3"] = self.currentState["ret_ref"]
+        #         box3_ret = getattr(self, "r3_l1_box_" + str(self.currentState["ret_b3"]))
+        #
+        #         self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] if divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] != 0 else 26
+        #         box2_ret = getattr(self, "r2_l1_box_" + str(self.currentState["ret_b2"]))
+        #
+        #         self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] if divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] != 0 else 26
+        #         box1_ret = getattr(self, "r1_l1_box_" + str(self.currentState["ret_b1"]))
+        #
+        #         tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1] if divmod((self.currentState["ret_b1"] + box1_ret.value()), 26)[1] != 0 else 26
+        #         self.currentState["ret_letter"] = chr(tmp + 96)
+        #     else:
+        #         self.currentState["ret_letter"] = " "
+        #     i += 1
+        #     txt += self.currentState["ret_letter"]
+        #
+        # self.decryptTextEdit.setText(txt)
+        # self.decryptTextEdit.setAlignment(Qt.AlignCenter)
 
     def suivant_button_clicked(self):
         # switch: encrypter ou decrypter
@@ -209,18 +198,31 @@ class Window(QMainWindow, Ui_enigma_board):
                 #colorate the current chemain
                 self.currentState["letter"] = msg[self.currentState["index"]]
                 self.colorerChemain()
-                #----------------------------------
-                # if self.currentState["letter"] != " ":
-                #     txt = self.decryptTextEdit.toPlainText()
-                #     txt += self.currentState["letter"]
-                #     self.decryptTextEdit.setText(txt)
-                #     self.decryptTextEdit.setAlignment(Qt.AlignCenter)
-                # else:
-                #     txt = self.decryptTextEdit.toPlainText()
-                #     txt += " "
-                #     self.decryptTextEdit.setText(txt)
-                #     self.decryptTextEdit.setAlignment(Qt.AlignCenter)
-                #----------------------------------
+                # ----------------------------------
+                if self.currentState["letter"] != " ":
+                    txt = self.decryptTextEdit.toPlainText()
+                    txt += self.currentState["ret_letter"]
+                    self.decryptTextEdit.setText(txt)
+                    self.decryptTextEdit.setAlignment(Qt.AlignCenter)
+
+                    # decalage par une position
+                    index = self.currentState["index"] % 72
+                    if index < 26:
+                        rotor = self.c1_R.currentText().lower()
+                    elif (index >= 26) & (index < 52):
+                        rotor = self.c2_R.currentText().lower()
+                    elif index >= 52:
+                        rotor = self.c3_R.currentText().lower()
+
+                    direction = self.c1_DG.currentText()
+                    self.decalage(rotor,direction,1)
+
+                else:
+                    txt = self.decryptTextEdit.toPlainText()
+                    txt += " "
+                    self.decryptTextEdit.setText(txt)
+                    self.decryptTextEdit.setAlignment(Qt.AlignCenter)
+                # ----------------------------------
                 self.currentState["index"] += 1
 
             else:
@@ -268,7 +270,7 @@ class Window(QMainWindow, Ui_enigma_board):
 
     def decrypter_button_clicked(self):
         # this code is just for settling up the button
-        msg = self.decryptTextEdit.toPlainText()
+        msg = self.decryptTextEdit.toPlainText().lower()
         if len(msg) > 0:
             self.encrypterButton.setEnabled(False)
             self.decrypterButton.setEnabled(False)
@@ -279,24 +281,27 @@ class Window(QMainWindow, Ui_enigma_board):
 
     # ---------------------------------
     def configRotors(self):
+        r1 = self.c1_R.currentText().lower
+        r2 = self.c2_R.currentText().lower
+        r3 = self.c3_R.currentText().lower
         ic1 = self.c1_box.value()
         ic2 = self.c2_box.value()
         ic3 = self.c3_box.value()
 
         if (ic1 < 0):
-            self.decalage("r1", "G", ic1)
+            self.decalage(r1, "G", ic1)
         else:
-            self.decalage("r1", "D", ic1)
+            self.decalage(r1, "D", ic1)
 
         if (ic2 < 0):
-            self.decalage("r2", "G", ic2)
+            self.decalage(r2, "G", ic2)
         else:
-            self.decalage("r2", "D", ic2)
+            self.decalage(r2, "D", ic2)
 
         if (ic3 < 0):
-            self.decalage("r3", "G", ic3)
+            self.decalage(r3, "G", ic3)
         else:
-            self.decalage("r3", "D", ic3)
+            self.decalage(r3, "D", ic3)
 
     def colorerChemain(self):
         if self.currentState["letter"] != " ":
@@ -351,7 +356,6 @@ class Window(QMainWindow, Ui_enigma_board):
             self.changeBoxBackgroundColor("r3_l1_box_" + str(self.currentState["ret_b3"]), "transparent")
             self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ret_ref"]), "transparent")
             self.changeLetterBackgroundColor(self.currentState["ret_letter"], "transparent")
-
 
 # running the app
 app = QApplication(sys.argv)

@@ -288,6 +288,7 @@ class Window(QMainWindow, Ui_enigma_board):
         ic2 = self.c2_box.value()
         ic3 = self.c3_box.value()
 
+
         if (ic1 < 0):
             self.decalage(r1, "G", ic1)
         else:

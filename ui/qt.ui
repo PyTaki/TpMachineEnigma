@@ -7586,12 +7586,12 @@
           </property>
           <item>
            <property name="text">
-            <string>R1</string>
+            <string>R2</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>R2</string>
+            <string>R1</string>
            </property>
           </item>
           <item>
@@ -7683,17 +7683,17 @@
           </property>
           <item>
            <property name="text">
+            <string>R3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
             <string>R1</string>
            </property>
           </item>
           <item>
            <property name="text">
             <string>R2</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>R3</string>
            </property>
           </item>
          </widget>

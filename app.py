@@ -217,7 +217,6 @@ class Window(QMainWindow, Ui_enigma_board):
                     elif index >= 52:
                         rotor = self.c3_R.currentText().lower()
                         direction = self.c3_DG.currentText()
-
                     self.decalage(rotor, direction, 1)
 
                     self.colorerChemain()

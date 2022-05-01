@@ -1140,7 +1140,7 @@ class Ui_enigma_board(object):
         self.r3_l1_box_17.setReadOnly(True)
         self.r3_l1_box_17.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
         self.r3_l1_box_17.setMinimum(-99)
-        self.r3_l1_box_17.setProperty("value", 16)
+        self.r3_l1_box_17.setProperty("value", -16)
         self.r3_l1_box_17.setObjectName("r3_l1_box_17")
         self.r3_l1.addWidget(self.r3_l1_box_17)
         self.r3_l1_box_18 = QtWidgets.QSpinBox(self.gridLayoutWidget)

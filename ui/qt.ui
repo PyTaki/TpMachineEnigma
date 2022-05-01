@@ -126,7 +126,7 @@
          <enum>QLayout::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_1">
+         <widget class="QSpinBox" name="r2_l1_box_0">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -160,7 +160,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_2">
+         <widget class="QSpinBox" name="r2_l1_box_1">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -194,7 +194,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_3">
+         <widget class="QSpinBox" name="r2_l1_box_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -228,7 +228,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_4">
+         <widget class="QSpinBox" name="r2_l1_box_3">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -262,7 +262,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_5">
+         <widget class="QSpinBox" name="r2_l1_box_4">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -296,7 +296,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_6">
+         <widget class="QSpinBox" name="r2_l1_box_5">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -330,7 +330,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_7">
+         <widget class="QSpinBox" name="r2_l1_box_6">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -364,7 +364,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_8">
+         <widget class="QSpinBox" name="r2_l1_box_7">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -398,7 +398,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_9">
+         <widget class="QSpinBox" name="r2_l1_box_8">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -432,7 +432,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_10">
+         <widget class="QSpinBox" name="r2_l1_box_9">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -466,7 +466,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_11">
+         <widget class="QSpinBox" name="r2_l1_box_10">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -500,7 +500,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_12">
+         <widget class="QSpinBox" name="r2_l1_box_11">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -534,7 +534,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_13">
+         <widget class="QSpinBox" name="r2_l1_box_12">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -568,7 +568,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_14">
+         <widget class="QSpinBox" name="r2_l1_box_13">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -602,7 +602,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_15">
+         <widget class="QSpinBox" name="r2_l1_box_14">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -636,7 +636,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_16">
+         <widget class="QSpinBox" name="r2_l1_box_15">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -673,7 +673,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_17">
+         <widget class="QSpinBox" name="r2_l1_box_16">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -707,7 +707,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_18">
+         <widget class="QSpinBox" name="r2_l1_box_17">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -741,7 +741,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_19">
+         <widget class="QSpinBox" name="r2_l1_box_18">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -775,7 +775,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_20">
+         <widget class="QSpinBox" name="r2_l1_box_19">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -809,7 +809,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_21">
+         <widget class="QSpinBox" name="r2_l1_box_20">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -843,7 +843,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_22">
+         <widget class="QSpinBox" name="r2_l1_box_21">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -877,7 +877,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_23">
+         <widget class="QSpinBox" name="r2_l1_box_22">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -911,7 +911,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_24">
+         <widget class="QSpinBox" name="r2_l1_box_23">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -945,7 +945,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_25">
+         <widget class="QSpinBox" name="r2_l1_box_24">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -979,7 +979,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l1_box_26">
+         <widget class="QSpinBox" name="r2_l1_box_25">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1026,7 +1026,7 @@
          <enum>QLayout::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_1">
+         <widget class="QSpinBox" name="r2_l2_box_0">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1060,7 +1060,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_2">
+         <widget class="QSpinBox" name="r2_l2_box_1">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1094,7 +1094,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_3">
+         <widget class="QSpinBox" name="r2_l2_box_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1128,7 +1128,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_4">
+         <widget class="QSpinBox" name="r2_l2_box_3">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1162,7 +1162,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_5">
+         <widget class="QSpinBox" name="r2_l2_box_4">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1196,7 +1196,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_6">
+         <widget class="QSpinBox" name="r2_l2_box_5">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1230,7 +1230,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_7">
+         <widget class="QSpinBox" name="r2_l2_box_6">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1264,7 +1264,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_8">
+         <widget class="QSpinBox" name="r2_l2_box_7">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1298,7 +1298,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_9">
+         <widget class="QSpinBox" name="r2_l2_box_8">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1332,7 +1332,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_10">
+         <widget class="QSpinBox" name="r2_l2_box_9">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1369,7 +1369,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_11">
+         <widget class="QSpinBox" name="r2_l2_box_10">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1403,7 +1403,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_12">
+         <widget class="QSpinBox" name="r2_l2_box_11">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1437,7 +1437,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_13">
+         <widget class="QSpinBox" name="r2_l2_box_12">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1471,7 +1471,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_14">
+         <widget class="QSpinBox" name="r2_l2_box_13">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1505,7 +1505,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_15">
+         <widget class="QSpinBox" name="r2_l2_box_14">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1539,7 +1539,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_16">
+         <widget class="QSpinBox" name="r2_l2_box_15">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -1576,7 +1576,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_17">
+         <widget class="QSpinBox" name="r2_l2_box_16">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1610,7 +1610,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_18">
+         <widget class="QSpinBox" name="r2_l2_box_17">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1644,7 +1644,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_19">
+         <widget class="QSpinBox" name="r2_l2_box_18">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1678,7 +1678,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_20">
+         <widget class="QSpinBox" name="r2_l2_box_19">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1712,7 +1712,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_21">
+         <widget class="QSpinBox" name="r2_l2_box_20">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1746,7 +1746,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_22">
+         <widget class="QSpinBox" name="r2_l2_box_21">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1780,7 +1780,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_23">
+         <widget class="QSpinBox" name="r2_l2_box_22">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1814,7 +1814,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_24">
+         <widget class="QSpinBox" name="r2_l2_box_23">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1848,7 +1848,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_25">
+         <widget class="QSpinBox" name="r2_l2_box_24">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1882,7 +1882,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r2_l2_box_26">
+         <widget class="QSpinBox" name="r2_l2_box_25">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1933,7 +1933,7 @@
          <enum>QLayout::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_1">
+         <widget class="QSpinBox" name="r3_l1_box_0">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -1967,7 +1967,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_2">
+         <widget class="QSpinBox" name="r3_l1_box_1">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2001,7 +2001,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_3">
+         <widget class="QSpinBox" name="r3_l1_box_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2035,7 +2035,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_4">
+         <widget class="QSpinBox" name="r3_l1_box_3">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2069,7 +2069,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_5">
+         <widget class="QSpinBox" name="r3_l1_box_4">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2103,7 +2103,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_6">
+         <widget class="QSpinBox" name="r3_l1_box_5">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2137,7 +2137,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_7">
+         <widget class="QSpinBox" name="r3_l1_box_6">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2171,7 +2171,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_8">
+         <widget class="QSpinBox" name="r3_l1_box_7">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2205,7 +2205,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_9">
+         <widget class="QSpinBox" name="r3_l1_box_8">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2239,7 +2239,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_10">
+         <widget class="QSpinBox" name="r3_l1_box_9">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2273,7 +2273,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_11">
+         <widget class="QSpinBox" name="r3_l1_box_10">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2307,7 +2307,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_12">
+         <widget class="QSpinBox" name="r3_l1_box_11">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2341,7 +2341,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_13">
+         <widget class="QSpinBox" name="r3_l1_box_12">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2375,7 +2375,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_14">
+         <widget class="QSpinBox" name="r3_l1_box_13">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2409,7 +2409,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_15">
+         <widget class="QSpinBox" name="r3_l1_box_14">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2443,7 +2443,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_16">
+         <widget class="QSpinBox" name="r3_l1_box_15">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -2480,7 +2480,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_17">
+         <widget class="QSpinBox" name="r3_l1_box_16">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2514,7 +2514,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_18">
+         <widget class="QSpinBox" name="r3_l1_box_17">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2548,7 +2548,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_19">
+         <widget class="QSpinBox" name="r3_l1_box_18">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2582,7 +2582,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_20">
+         <widget class="QSpinBox" name="r3_l1_box_19">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2616,7 +2616,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_21">
+         <widget class="QSpinBox" name="r3_l1_box_20">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2650,7 +2650,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_22">
+         <widget class="QSpinBox" name="r3_l1_box_21">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2684,7 +2684,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_23">
+         <widget class="QSpinBox" name="r3_l1_box_22">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2718,7 +2718,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_24">
+         <widget class="QSpinBox" name="r3_l1_box_23">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2752,7 +2752,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_25">
+         <widget class="QSpinBox" name="r3_l1_box_24">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2786,7 +2786,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l1_box_26">
+         <widget class="QSpinBox" name="r3_l1_box_25">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2830,7 +2830,7 @@
          <enum>QLayout::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_1">
+         <widget class="QSpinBox" name="r3_l2_box_0">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2864,7 +2864,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_2">
+         <widget class="QSpinBox" name="r3_l2_box_1">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2898,7 +2898,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_3">
+         <widget class="QSpinBox" name="r3_l2_box_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2932,7 +2932,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_4">
+         <widget class="QSpinBox" name="r3_l2_box_3">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -2966,7 +2966,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_5">
+         <widget class="QSpinBox" name="r3_l2_box_4">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3000,7 +3000,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_6">
+         <widget class="QSpinBox" name="r3_l2_box_5">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3034,7 +3034,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_7">
+         <widget class="QSpinBox" name="r3_l2_box_6">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3068,7 +3068,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_8">
+         <widget class="QSpinBox" name="r3_l2_box_7">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3102,7 +3102,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_9">
+         <widget class="QSpinBox" name="r3_l2_box_8">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3136,7 +3136,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_10">
+         <widget class="QSpinBox" name="r3_l2_box_9">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3170,7 +3170,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_11">
+         <widget class="QSpinBox" name="r3_l2_box_10">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3204,7 +3204,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_12">
+         <widget class="QSpinBox" name="r3_l2_box_11">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3238,7 +3238,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_13">
+         <widget class="QSpinBox" name="r3_l2_box_12">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3272,7 +3272,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_14">
+         <widget class="QSpinBox" name="r3_l2_box_13">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3306,7 +3306,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_15">
+         <widget class="QSpinBox" name="r3_l2_box_14">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3340,7 +3340,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_16">
+         <widget class="QSpinBox" name="r3_l2_box_15">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -3377,7 +3377,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_17">
+         <widget class="QSpinBox" name="r3_l2_box_16">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3411,7 +3411,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_18">
+         <widget class="QSpinBox" name="r3_l2_box_17">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3445,7 +3445,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_19">
+         <widget class="QSpinBox" name="r3_l2_box_18">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3479,7 +3479,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_20">
+         <widget class="QSpinBox" name="r3_l2_box_19">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3513,7 +3513,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_21">
+         <widget class="QSpinBox" name="r3_l2_box_20">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3547,7 +3547,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_22">
+         <widget class="QSpinBox" name="r3_l2_box_21">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3581,7 +3581,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_23">
+         <widget class="QSpinBox" name="r3_l2_box_22">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3615,7 +3615,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_24">
+         <widget class="QSpinBox" name="r3_l2_box_23">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3649,7 +3649,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_25">
+         <widget class="QSpinBox" name="r3_l2_box_24">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3683,7 +3683,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r3_l2_box_26">
+         <widget class="QSpinBox" name="r3_l2_box_25">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3734,7 +3734,7 @@
          <enum>QLayout::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_1">
+         <widget class="QSpinBox" name="r1_l1_box_0">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3768,7 +3768,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_2">
+         <widget class="QSpinBox" name="r1_l1_box_1">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3802,7 +3802,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_3">
+         <widget class="QSpinBox" name="r1_l1_box_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3836,7 +3836,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_4">
+         <widget class="QSpinBox" name="r1_l1_box_3">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3870,7 +3870,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_5">
+         <widget class="QSpinBox" name="r1_l1_box_4">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3904,7 +3904,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_6">
+         <widget class="QSpinBox" name="r1_l1_box_5">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3938,7 +3938,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_7">
+         <widget class="QSpinBox" name="r1_l1_box_6">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -3972,7 +3972,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_8">
+         <widget class="QSpinBox" name="r1_l1_box_7">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4006,7 +4006,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_9">
+         <widget class="QSpinBox" name="r1_l1_box_8">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4040,7 +4040,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_10">
+         <widget class="QSpinBox" name="r1_l1_box_9">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4074,7 +4074,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_11">
+         <widget class="QSpinBox" name="r1_l1_box_10">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4108,7 +4108,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_12">
+         <widget class="QSpinBox" name="r1_l1_box_11">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4142,7 +4142,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_13">
+         <widget class="QSpinBox" name="r1_l1_box_12">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4176,7 +4176,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_14">
+         <widget class="QSpinBox" name="r1_l1_box_13">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4210,7 +4210,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_15">
+         <widget class="QSpinBox" name="r1_l1_box_14">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4244,7 +4244,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_16">
+         <widget class="QSpinBox" name="r1_l1_box_15">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -4281,7 +4281,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_17">
+         <widget class="QSpinBox" name="r1_l1_box_16">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4315,7 +4315,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_18">
+         <widget class="QSpinBox" name="r1_l1_box_17">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4349,7 +4349,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_19">
+         <widget class="QSpinBox" name="r1_l1_box_18">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4383,7 +4383,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_20">
+         <widget class="QSpinBox" name="r1_l1_box_19">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4417,7 +4417,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_21">
+         <widget class="QSpinBox" name="r1_l1_box_20">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4451,7 +4451,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_22">
+         <widget class="QSpinBox" name="r1_l1_box_21">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4485,7 +4485,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_23">
+         <widget class="QSpinBox" name="r1_l1_box_22">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4519,7 +4519,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_24">
+         <widget class="QSpinBox" name="r1_l1_box_23">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4553,7 +4553,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_25">
+         <widget class="QSpinBox" name="r1_l1_box_24">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4587,7 +4587,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l1_box_26">
+         <widget class="QSpinBox" name="r1_l1_box_25">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4631,7 +4631,7 @@
          <enum>QLayout::SetFixedSize</enum>
         </property>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_1">
+         <widget class="QSpinBox" name="r1_l2_box_0">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4665,7 +4665,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_2">
+         <widget class="QSpinBox" name="r1_l2_box_1">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -4695,6 +4695,40 @@
           </property>
           <property name="value">
            <number>21</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="r1_l2_box_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="wrapping">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="minimum">
+           <number>-99</number>
+          </property>
+          <property name="value">
+           <number>5</number>
           </property>
          </widget>
         </item>
@@ -4728,7 +4762,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>5</number>
+           <number>-17</number>
           </property>
          </widget>
         </item>
@@ -4762,7 +4796,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>-17</number>
+           <number>21</number>
           </property>
          </widget>
         </item>
@@ -4796,7 +4830,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>21</number>
+           <number>-4</number>
           </property>
          </widget>
         </item>
@@ -4830,7 +4864,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>-4</number>
+           <number>12</number>
           </property>
          </widget>
         </item>
@@ -4864,7 +4898,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>12</number>
+           <number>16</number>
           </property>
          </widget>
         </item>
@@ -4898,7 +4932,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>16</number>
+           <number>6</number>
           </property>
          </widget>
         </item>
@@ -4932,7 +4966,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>6</number>
+           <number>-3</number>
           </property>
          </widget>
         </item>
@@ -4966,7 +5000,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>-3</number>
+           <number>7</number>
           </property>
          </widget>
         </item>
@@ -5000,7 +5034,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>7</number>
+           <number>-7</number>
           </property>
          </widget>
         </item>
@@ -5034,7 +5068,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>-7</number>
+           <number>4</number>
           </property>
          </widget>
         </item>
@@ -5068,7 +5102,7 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>4</number>
+           <number>2</number>
           </property>
          </widget>
         </item>
@@ -5102,46 +5136,12 @@
            <number>-99</number>
           </property>
           <property name="value">
-           <number>2</number>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="r1_l2_box_15">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>40</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="wrapping">
-           <bool>true</bool>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="readOnly">
-           <bool>true</bool>
-          </property>
-          <property name="buttonSymbols">
-           <enum>QAbstractSpinBox::NoButtons</enum>
-          </property>
-          <property name="minimum">
-           <number>-99</number>
-          </property>
-          <property name="value">
            <number>5</number>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_16">
+         <widget class="QSpinBox" name="r1_l2_box_15">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -5178,7 +5178,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_17">
+         <widget class="QSpinBox" name="r1_l2_box_16">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5212,7 +5212,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_18">
+         <widget class="QSpinBox" name="r1_l2_box_17">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5246,7 +5246,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_19">
+         <widget class="QSpinBox" name="r1_l2_box_18">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5280,7 +5280,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_20">
+         <widget class="QSpinBox" name="r1_l2_box_19">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5314,7 +5314,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_21">
+         <widget class="QSpinBox" name="r1_l2_box_20">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5348,7 +5348,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_22">
+         <widget class="QSpinBox" name="r1_l2_box_21">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5382,7 +5382,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_23">
+         <widget class="QSpinBox" name="r1_l2_box_22">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5416,7 +5416,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_24">
+         <widget class="QSpinBox" name="r1_l2_box_23">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5450,7 +5450,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_25">
+         <widget class="QSpinBox" name="r1_l2_box_24">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5484,7 +5484,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="r1_l2_box_26">
+         <widget class="QSpinBox" name="r1_l2_box_25">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
@@ -5530,7 +5530,7 @@
        <enum>QLayout::SetFixedSize</enum>
       </property>
       <item>
-       <widget class="QSpinBox" name="ref_box_1">
+       <widget class="QSpinBox" name="ref_box_0">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5564,7 +5564,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_2">
+       <widget class="QSpinBox" name="ref_box_1">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5598,7 +5598,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_3">
+       <widget class="QSpinBox" name="ref_box_2">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5632,7 +5632,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_4">
+       <widget class="QSpinBox" name="ref_box_3">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5666,7 +5666,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_5">
+       <widget class="QSpinBox" name="ref_box_4">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5700,7 +5700,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_6">
+       <widget class="QSpinBox" name="ref_box_5">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5734,7 +5734,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_7">
+       <widget class="QSpinBox" name="ref_box_6">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5768,7 +5768,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_8">
+       <widget class="QSpinBox" name="ref_box_7">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5802,7 +5802,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_9">
+       <widget class="QSpinBox" name="ref_box_8">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5836,7 +5836,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_10">
+       <widget class="QSpinBox" name="ref_box_9">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5870,7 +5870,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_11">
+       <widget class="QSpinBox" name="ref_box_10">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5904,7 +5904,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_12">
+       <widget class="QSpinBox" name="ref_box_11">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5938,7 +5938,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_13">
+       <widget class="QSpinBox" name="ref_box_12">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -5972,7 +5972,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_14">
+       <widget class="QSpinBox" name="ref_box_13">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6006,7 +6006,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_15">
+       <widget class="QSpinBox" name="ref_box_14">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6040,7 +6040,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_16">
+       <widget class="QSpinBox" name="ref_box_15">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -6077,7 +6077,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_17">
+       <widget class="QSpinBox" name="ref_box_16">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6111,7 +6111,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_18">
+       <widget class="QSpinBox" name="ref_box_17">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6145,7 +6145,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_19">
+       <widget class="QSpinBox" name="ref_box_18">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6179,7 +6179,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_20">
+       <widget class="QSpinBox" name="ref_box_19">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6213,7 +6213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_21">
+       <widget class="QSpinBox" name="ref_box_20">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6247,7 +6247,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_22">
+       <widget class="QSpinBox" name="ref_box_21">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6281,7 +6281,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_23">
+       <widget class="QSpinBox" name="ref_box_22">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6315,7 +6315,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_24">
+       <widget class="QSpinBox" name="ref_box_23">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6349,7 +6349,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_25">
+       <widget class="QSpinBox" name="ref_box_24">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -6383,7 +6383,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="ref_box_26">
+       <widget class="QSpinBox" name="ref_box_25">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>

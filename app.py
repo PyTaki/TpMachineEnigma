@@ -31,6 +31,7 @@ class Window(QMainWindow, Ui_enigma_board):
         self.decrypterToggled = False
         self.colored = False
         self.isCurrentLetterUpper = False
+        self.nbLettersParcouri = 0
         self.blue = "#3589FF"
         self.red = "#FF5151"
         self.setupUi(self)
@@ -45,14 +46,14 @@ class Window(QMainWindow, Ui_enigma_board):
     # ------ Utils ------
 
     def InitialRotorState(self):
-        for i in range(1, 27, 1):
+        for i in range(0, 26, 1):
             for j in range(1, 4, 1):
                 for k in range(1, 3, 1):
                     box = "r" + str(j) + "_l" + str(k) + "_box_" + str(i)
                     self.initialState[box] = getattr(self, box).value()
 
     def setInitialRotorSate(self):
-        for i in range(1, 27, 1):
+        for i in range(0, 26, 1):
             for j in range(1, 4, 1):
                 for k in range(1, 3, 1):
                     box = "r" + str(j) + "_l" + str(k) + "_box_" + str(i)
@@ -65,12 +66,6 @@ class Window(QMainWindow, Ui_enigma_board):
             getattr(self, "c" + str(i) + "_DG").setEnabled(False)
             getattr(self, "c" + str(i) + "_R").setEnabled(False)
             getattr(self, "c" + str(i) + "_box").setEnabled(False)
-
-        # for i in range(1, 27, 1):
-        #     for j in range(1, 4, 1):
-        #         for k in range(1, 3, 1):
-        #             getattr(self, "r" + str(j) + "_l" + str(k) + "_box_" + str(i)).setReadOnly(True)
-        #             getattr(self, "r" + str(j) + "_l" + str(k) + "_box_" + str(i)).setButtonSymbols(QAbstractSpinBox.NoButtons)
 
     '''it sets the rotors and the reflecteur on Edit mode'''
 
@@ -99,33 +94,25 @@ class Window(QMainWindow, Ui_enigma_board):
     def decalage(self, rotor, direction, iteration):
         if direction == "G":
             for p in range(0, abs(iteration), 1):
-                tmp1 = getattr(self, rotor + "_l1_box_1").value()
-                tmp2 = getattr(self, rotor + "_l2_box_1").value()
+                tmp1 = getattr(self, rotor + "_l1_box_0").value()
+                tmp2 = getattr(self, rotor + "_l2_box_0").value()
                 for k in range(1, 3, 1):
-                    for i in range(1, 26, 1):
+                    for i in range(0, 25, 1):
                         val = getattr(self, rotor + "_l" + str(k) + "_box_" + str(i + 1)).value()
                         getattr(self, rotor + "_l" + str(k) + "_box_" + str(i)).setProperty("value", val)
-                getattr(self, rotor + "_l1_box_26").setProperty("value", tmp1)
-                getattr(self, rotor + "_l2_box_26").setProperty("value", tmp2)
+                getattr(self, rotor + "_l1_box_25").setProperty("value", tmp1)
+                getattr(self, rotor + "_l2_box_25").setProperty("value", tmp2)
 
         elif direction == "D":
             for p in range(0, abs(iteration), 1):
-                tmp1 = getattr(self, rotor + "_l1_box_26").value()
-                tmp2 = getattr(self, rotor + "_l2_box_26").value()
+                tmp1 = getattr(self, rotor + "_l1_box_25").value()
+                tmp2 = getattr(self, rotor + "_l2_box_25").value()
                 for k in range(1, 3, 1):
-                    for i in range(26, 1, -1):
+                    for i in range(25, 0, -1):
                         val = getattr(self, rotor + "_l" + str(k) + "_box_" + str(i - 1)).value()
                         getattr(self, rotor + "_l" + str(k) + "_box_" + str(i)).setProperty("value", val)
-                getattr(self, rotor + "_l1_box_1").setProperty("value", tmp1)
-                getattr(self, rotor + "_l2_box_1").setProperty("value", tmp2)
-
-    # def animate(self, object_name):
-    #     self.anim = QPropertyAnimation(getattr(self, object_name), b"geometry")
-    #     self.anim.setEasingCurve(QEasingCurve.InOutCubic)
-    #     self.anim.setStartValue(QRect(getattr(self, object_name).geometry()))
-    #     self.anim.setEndValue(QRect(getattr(self, object_name).geometry().adjusted(0, 0, -10, 40)))
-    #     self.anim.setDuration(1500)
-    #     self.anim.start(QPropertyAnimation.DeleteWhenStopped)
+                getattr(self, rotor + "_l1_box_0").setProperty("value", tmp1)
+                getattr(self, rotor + "_l2_box_0").setProperty("value", tmp2)
 
     # --------------Actions when buttons are clicked-----------
 
@@ -141,8 +128,9 @@ class Window(QMainWindow, Ui_enigma_board):
 
     def encypter_button_clicked(self):
         # this code is just for settling up the button
-        msg = self.encryptTextEdit.toPlainText().lower()
+        msg = self.encryptTextEdit.toPlainText()
         if len(msg) > 0:
+            self.nbLettersParcouri = 0
             self.encrypterButton.setEnabled(False)
             self.decrypterButton.setEnabled(False)
             self.encrypterToggled = True
@@ -163,6 +151,22 @@ class Window(QMainWindow, Ui_enigma_board):
                 self.currentState["letter"] = msg[self.currentState["index"]]
                 self.isCurrentLetterUpper = True if self.currentState["letter"].isupper() else False
                 if self.currentState["letter"].isalpha():
+                    # decalage par une position
+                    self.nbLettersParcouri += 1
+                    index = self.nbLettersParcouri % 78
+
+                    if index < 26:
+                        rotor = self.c1_R.currentText().lower()
+                        direction = self.c1_DG.currentText()
+                    elif (index >= 26) & (index < 52):
+                        rotor = self.c2_R.currentText().lower()
+                        direction = self.c2_DG.currentText()
+                    elif index >= 52:
+                        rotor = self.c3_R.currentText().lower()
+                        direction = self.c3_DG.currentText()
+
+                    self.decalage(rotor, direction, 1)
+                    #----------------------------
                     self.colorerChemain()
                     self.colored = True
                     txt = self.decryptTextEdit.toPlainText()
@@ -170,26 +174,12 @@ class Window(QMainWindow, Ui_enigma_board):
                     self.decryptTextEdit.setText(txt)
                     self.decryptTextEdit.setAlignment(Qt.AlignCenter)
 
-                    # decalage par une position
-                    index = self.currentState["index"] % 72
-                    if index < 26:
-                        rotor = self.c1_R.currentText().lower()
-                    elif (index >= 26) & (index < 52):
-                        rotor = self.c2_R.currentText().lower()
-                    elif index >= 52:
-                        rotor = self.c3_R.currentText().lower()
-
-                    direction = self.c1_DG.currentText()
-                    self.decalage(rotor,direction,1)
-
                 else:
                     txt = self.decryptTextEdit.toPlainText()
                     txt += self.currentState["letter"]
                     self.decryptTextEdit.setText(txt)
                     self.decryptTextEdit.setAlignment(Qt.AlignCenter)
-
                 # ----------------------------------
-
                 self.currentState["index"] += 1
 
             else:
@@ -201,6 +191,7 @@ class Window(QMainWindow, Ui_enigma_board):
                 # self.decryptTextEdit.setText("Fin D'encryption")
                 self.unColorChemain()
                 self.decryptTextEdit.setAlignment(Qt.AlignCenter)
+
         ##################################################################################################
 
         elif self.decrypterToggled:
@@ -214,6 +205,21 @@ class Window(QMainWindow, Ui_enigma_board):
                 self.currentState["letter"] = msg[self.currentState["index"]]
                 self.isCurrentLetterUpper = True if self.currentState["letter"].isupper() else False
                 if self.currentState["letter"].isalpha():
+                    # decalage par une position
+                    self.nbLettersParcouri += 1
+                    index = self.nbLettersParcouri % 78
+                    if index < 26:
+                        rotor = self.c1_R.currentText().lower()
+                        direction = self.c1_DG.currentText()
+                    elif (index >= 26) & (index < 52):
+                        rotor = self.c2_R.currentText().lower()
+                        direction = self.c2_DG.currentText()
+                    elif index >= 52:
+                        rotor = self.c3_R.currentText().lower()
+                        direction = self.c3_DG.currentText()
+
+                    self.decalage(rotor, direction, 1)
+
                     self.colorerChemain()
                     self.colored = True
                     txt = self.encryptTextEdit.toPlainText()
@@ -221,17 +227,6 @@ class Window(QMainWindow, Ui_enigma_board):
                     self.encryptTextEdit.setText(txt)
                     self.encryptTextEdit.setAlignment(Qt.AlignCenter)
 
-                    # decalage par une position
-                    index = self.currentState["index"] % 72
-                    if index < 26:
-                        rotor = self.c1_R.currentText().lower()
-                    elif (index >= 26) & (index < 52):
-                        rotor = self.c2_R.currentText().lower()
-                    elif index >= 52:
-                        rotor = self.c3_R.currentText().lower()
-
-                    direction = self.c1_DG.currentText()
-                    self.decalage(rotor, direction, 1)
 
                 else:
                     txt = self.encryptTextEdit.toPlainText()
@@ -251,18 +246,16 @@ class Window(QMainWindow, Ui_enigma_board):
                 self.unColorChemain()
                 self.encryptTextEdit.setAlignment(Qt.AlignCenter)
 
-
-
     def decrypter_button_clicked(self):
         # this code is just for settling up the button
-        msg = self.decryptTextEdit.toPlainText().lower()
+        msg = self.decryptTextEdit.toPlainText()
         if len(msg) > 0:
+            self.nbLettersParcouri = 0
             self.encrypterButton.setEnabled(False)
             self.decrypterButton.setEnabled(False)
             self.decrypterToggled = True
             self.encrypterToggled = False
-            self.decryptTextEdit.clear()
-        # the code for the decryption here
+            self.encryptTextEdit.clear()
     # ---------------------------------
     def configRotors(self):
         r1 = self.c1_R.currentText().lower()
@@ -290,24 +283,37 @@ class Window(QMainWindow, Ui_enigma_board):
 
     def colorerChemain(self):
         if self.currentState["letter"].isalpha():
+            # entryLetter = self.currentState["letter"].lower()
+            # b1_aller = ord(self.currentState["letter"].lower()) - 96
+            # b2_aller = getattr(self, "r1_l2_box_" + b1_aller)
+            # b3_aller
+            # ref_aller
+            # b3_retour
+            # b2_retour
+            # b1_retour
+            # resultLetter
+            #------------------------------------------------ALLER---------------------------------------------------------
             self.changeLetterBackgroundColor(self.currentState["letter"].lower() , self.red)
-            self.currentState["b1"] = ord(self.currentState["letter"].lower()) - 96
+            self.currentState["b1"] = ord(self.currentState["letter"].lower()) - 97
             self.changeBoxBackgroundColor("r1_l2_box_" + str(self.currentState["b1"]), self.red)
+
             box1 = getattr(self, "r1_l2_box_" + str(self.currentState["b1"]))
-            self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1] if  divmod((self.currentState["b1"] + box1.value()), 26)[1] != 0 else 26
+            self.currentState["b2"] = divmod((self.currentState["b1"] + box1.value()), 26)[1]
 
             self.changeBoxBackgroundColor("r2_l2_box_" + str(self.currentState["b2"]), self.red)
             box2 = getattr(self, "r2_l2_box_" + str(self.currentState["b2"]))
 
-            self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1] if  divmod((self.currentState["b2"] + box2.value()), 26)[1] != 0 else 26
+            self.currentState["b3"] = divmod((self.currentState["b2"] + box2.value()), 26)[1]
             self.changeBoxBackgroundColor("r3_l2_box_" + str(self.currentState["b3"]), self.red)
             box3 = getattr(self, "r3_l2_box_" + str(self.currentState["b3"]))
 
-            self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1] if  divmod((self.currentState["b3"] + box3.value()), 26)[1] != 0 else 26
+            self.currentState["ref"] = divmod((self.currentState["b3"] + box3.value()), 26)[1]
             self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ref"]), self.red)
             box_curr_ref = getattr(self, "ref_box_" + str(self.currentState["ref"]))
-            # ------------------------------------
-            self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] if  divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1] != 0 else 26
+
+            ################################################################################################################
+
+            self.currentState["ret_ref"] = divmod((self.currentState["ref"] + box_curr_ref.value()), 26)[1]
             self.changeBoxBackgroundColor("ref_box_" + str(self.currentState["ret_ref"]), self.blue)
             # box_ret_ref = getattr(self, "ref_box_" + str(self.currentState["ret_ref"]))
 
@@ -315,16 +321,16 @@ class Window(QMainWindow, Ui_enigma_board):
             self.changeBoxBackgroundColor("r3_l1_box_" + str(self.currentState["ret_b3"]), self.blue)
             box3_ret = getattr(self, "r3_l1_box_" + str(self.currentState["ret_b3"]))
 
-            self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] if  divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1] != 0 else 26
+            self.currentState["ret_b2"] = divmod((self.currentState["ret_b3"] + box3_ret.value()), 26)[1]
             self.changeBoxBackgroundColor("r2_l1_box_" + str(self.currentState["ret_b2"]), self.blue)
             box2_ret = getattr(self, "r2_l1_box_" + str(self.currentState["ret_b2"]))
 
-            self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] if divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1] != 0 else 26
+            self.currentState["ret_b1"] = divmod((self.currentState["ret_b2"] + box2_ret.value()), 26)[1]
             self.changeBoxBackgroundColor("r1_l1_box_" + str(self.currentState["ret_b1"]), self.blue)
             box1_ret = getattr(self, "r1_l1_box_" + str(self.currentState["ret_b1"]))
 
-            tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1] if divmod((self.currentState["ret_b1"] + box1_ret.value()), 26)[1] != 0 else 26
-            self.currentState["ret_letter"] = chr( tmp + 96)
+            tmp = divmod(self.currentState["ret_b1"] + box1_ret.value(), 26)[1]
+            self.currentState["ret_letter"] = chr(tmp + 97)
             self.changeLetterBackgroundColor(self.currentState["ret_letter"], self.blue)
 
     def unColorChemain(self):
